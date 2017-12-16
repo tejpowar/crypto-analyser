@@ -5,6 +5,7 @@ require('babel-polyfill');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const routes = require('./routes');
 
 const port = process.env.PORT ? process.env.PORT : 8181;
 
@@ -12,6 +13,7 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use('/api', routes);
 
 app.listen(port, (error) => {
   if (error) {

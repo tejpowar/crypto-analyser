@@ -1,11 +1,3 @@
-import React from 'react';
-
-const App = () => {
-  return (
-    <div style={{ textAlign: 'center' }}>
-      <h1>React App Simples</h1>
-    </div>
-  );
-};
+import App from './App';
 
 export default App;
